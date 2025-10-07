@@ -11,5 +11,6 @@ public class Main {
 
         Product p = new Product(b);
         // This is Builder design pattern
+        // Still it has some issue like user can pass an null object new Product(null); in v4 we will going to solve this issue too
     }
 }
