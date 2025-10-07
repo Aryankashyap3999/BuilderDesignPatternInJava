@@ -24,5 +24,16 @@ public class Product {
         this.images = images;
     }
 
+    // solve problem or forcefully passing args can be solved by constructor overloading
+
+    Product(String name, int price) {
+        this.name = name;
+        this.price = price;
+    }
+
+    // But it create another problem and that is constructor explosion
+    // What is constructor explosion let's suppose you have 4 args than total number of fesible and different set of constructor is 2^4 that is a poor way of coding
+    // And when you need more args than again you have to make different sets of constructors.
+    // It is not a solution.
 
 }
